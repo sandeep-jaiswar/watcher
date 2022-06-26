@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 1.2rem;
+  position: sticky;
+  .header__logo__image{
+    width: 4rem;
+    height: 4rem;
+  }
+  .header__menu{
+    width: fit-content;
+    display: grid;
+    .header__menu__list{
+      display: flex;
+      width: fit-content;
+      .header__menu__list__item__icon{
+        width: 3rem;
+        height: 3rem;
+        fill: #000;
+      }
+      .header__menu__list__item{
+        margin-left: 2rem;
+        .active{
+          color: #00a0e9;
+        }
+      }
+    }
+  }
+}
